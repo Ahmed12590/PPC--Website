@@ -1,0 +1,41 @@
+header.header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+.main-header {
+  width: 100%;
+  background: #71a3c1;
+  /* backdrop-filter: blur(42.95000076293945px); */
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header li {
+  list-style: none;
+}
+
+.sitelogo img {
+  width: 100px;
+  height: auto;
+}
+.header ul a {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  padding: 0px 50px;
+}
+
+ul {
+  padding: 0;
+}
