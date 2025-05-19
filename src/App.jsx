@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home/Home";
+import HomePage from "./components/pages/Home/Home";
+import Seo from "./components/pages/Seo/Seo";
 import Header from "./components/Header";
-import Footer from "./components/Footer/Footer";
+// import Footer from "./components/Footer/Footer";
 import Preloader from "./components/Preloader/Preloader";
 
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading process (e.g., fetching data, etc.)
     setTimeout(() => {
-      setLoading(false); // Hide preloader after 2 seconds
-    }, 2000); // Adjust this time based on your needs
+      setLoading(false);
+    }, 2000);
   }, []);
 
   return (
@@ -20,11 +20,13 @@ function App() {
       {loading ? <Preloader /> : null}
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/seo" element={<Seo />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 }
+
 
 export default App;

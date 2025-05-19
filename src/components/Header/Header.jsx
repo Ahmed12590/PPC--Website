@@ -8,7 +8,9 @@ export const Header = () => {
       <nav className="main-header">
         <ul className="sitelogo">
           <li>
-            <img src={logo} alt="sitelogo" />{" "}
+            <NavLink to="./">
+              <img src={logo} alt="sitelogo" />{" "}
+            </NavLink>
           </li>
         </ul>
         <ul className="main-nav">
@@ -19,14 +21,9 @@ export const Header = () => {
             <NavLink to={`/`}>WEBSITE DESIGN</NavLink>
           </li>
           <li>
-            <NavLink to={`/`}>SEO</NavLink>
+            <NavLink to={`/Seo`}>SEO</NavLink>
           </li>
-          <li>
-            <NavLink to={`/`}>COPYWRITING</NavLink>
-          </li>
-          <li>
-            <NavLink to={`/`}>LOGO DESIGNS</NavLink>
-          </li>
+
           <li>
             <NavLink to={`/`}>PORTFOLIO</NavLink>
           </li>
@@ -38,6 +35,38 @@ export const Header = () => {
           </li>
           <li>
             <NavLink to={`/`}>Login</NavLink>
+          </li>
+        </ul>
+      </nav>
+      <nav class="mobile-header">
+        <input type="checkbox" id="checkbox" />
+        <ul class="mob d-flex align-items-center justify-content-between">
+          <li class="mob-logo">
+            <NavLink to="./">
+              <img src={logo} alt="sitelogo" />{" "}
+            </NavLink>
+          </li>
+
+          <li class="hamburger" id="hamburger">
+            <label for="checkbox">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </label>
+          </li>
+        </ul>
+
+        <ul class="mobile-inner">
+          <li>
+            <NavLink to={`/`}>Home</NavLink>
+          </li>
+
+          <li>
+            <NavLink to={`/Seo`}>Seo</NavLink>
+          </li>
+
+          <li>
+            <NavLink to={`/`}>Contact Us</NavLink>
           </li>
         </ul>
       </nav>

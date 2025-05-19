@@ -1,0 +1,24 @@
+.second-heading {
+  width: 14rem;
+  height: 3.6875rem;
+  color: #f9b341;
+  text-align: center;
+  font-family: Poppins Bold, sans-serif, sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 109.5%;
+}
+
+.second-section {
+  padding-top: 50px;
+}
+.second-para {
+  max-width: 48.375rem;
+  color: #8d8d8d;
+  font-family: Poppins Regular, sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

@@ -1,0 +1,15 @@
+.first-wrapper {
+  background-color: #71a2c0;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 5em;
+  text-align: center;
+  margin-top: 0;
+}
